@@ -1,0 +1,950 @@
+@font-face {
+  font-family: "Video400";
+  src: url("../fonts/Video-Regular.ttf");
+}
+@font-face {
+  font-family: "Video300";
+  src: url("../fonts/Video-Light.ttf");
+}
+@font-face {
+  font-family: "WorkSans";
+  src: url("../fonts/WorkSans.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.4;
+  vertical-align: baseline;
+  text-decoration: none;
+  outline: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #020206;
+}
+
+body {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.container {
+  width: 1326px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+.checkbox-container .checkbox {
+  display: block;
+  position: relative;
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  flex-shrink: 0;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a background color */
+  /* When the checkbox is checked, add a background */
+  /* When the checkbox is checked, add a background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+.checkbox-container .checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+.checkbox-container .checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #45D5EC;
+}
+.checkbox-container .checkbox .checkmark.error {
+  border: 1px solid blue;
+  background-color: rgba(255, 80, 80, 0.0705882353);
+}
+.checkbox-container .checkbox .checkmark.error::before {
+  content: "!";
+  top: 43%;
+  left: -13px;
+  position: absolute;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: blue;
+  font-weight: bold;
+}
+.checkbox-container .checkbox input:checked ~ .checkmark {
+  background-color: #45D5EC;
+  border: 2px #45D5EC solid;
+}
+.checkbox-container .checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox-container .checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkbox-container .checkbox .checkmark:after {
+  left: 17px;
+  top: 10px;
+  width: 7px;
+  height: 17px;
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+}
+.checkbox-container label {
+  cursor: pointer;
+}
+.checkbox-container .label-text {
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 15px;
+}
+
+.form-pages {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.form-pages .form-page {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  padding: 30px;
+  overflow-y: auto;
+}
+.form-pages .form-page.hidden {
+  display: none;
+}
+.form-pages .form-page.summary-page form {
+  display: none;
+}
+
+.head-button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 12px 32px;
+  background-color: #45D5EC;
+  border-radius: 12px;
+  font-family: "Video400", sans-serif;
+}
+
+.configuration-box-container {
+  display: flex;
+  width: 1266px;
+}
+.configuration-box-container .reservation .reservation-box {
+  margin-left: 32px;
+  width: 400px;
+  border: 1px solid rgba(165, 250, 243, 0.2509803922);
+  box-shadow: 0px 0px 16px 0px rgba(165, 250, 243, 0.4784313725) inset, 0px 4px 8px 0px rgba(165, 250, 243, 0.2392156863);
+  background-color: #45D5EC;
+  padding: 64px 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 12px;
+}
+.configuration-box-container .reservation .reservation-box .text {
+  font-family: "Video400", sans-serif;
+  font-size: 32px;
+  letter-spacing: -0.01em;
+  color: #FEFEFE;
+}
+.configuration-box-container .reservation .reservation-box .buttons-wrapper {
+  width: 100%;
+}
+.configuration-box-container .reservation .reservation-box .buttons-wrapper .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.configurator-box {
+  background-image: linear-gradient(white, white), linear-gradient(288deg, rgba(69, 213, 236, 0.07), rgba(69, 213, 236, 0.7));
+  border: double 1px transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 12px;
+  width: 1266px;
+  display: flex;
+}
+.configurator-box.summary {
+  width: 1134px;
+}
+.configurator-box .configurator-box-wrapper {
+  padding: 64px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 100%;
+}
+.configurator-box .configurator-box-wrapper .main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.configurator-box .configurator-box-wrapper .main.gap48 {
+  gap: 48px;
+}
+.configurator-box .configurator-box-wrapper .main .head-box {
+  display: flex;
+  justify-content: space-between;
+}
+.configurator-box .configurator-box-wrapper .main .head-box .titles {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.configurator-box .configurator-box-wrapper .main .head-box .titles .title {
+  font-family: "Video300", sans-serif;
+  font-size: 32px;
+  color: #45D5EC;
+  font-weight: normal;
+  letter-spacing: -0.01em;
+}
+.configurator-box .configurator-box-wrapper .main .head-box .titles .subtitle {
+  font-family: "WorkSans", sans-serif;
+  font-size: 14px;
+  color: #45D5EC;
+}
+.configurator-box .configurator-box-wrapper .main .head-box .steps-bars {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  height: 25px;
+}
+.configurator-box .configurator-box-wrapper .main .head-box .steps-bars .desc {
+  font-family: "WorkSans", sans-serif;
+  font-size: 16px;
+  color: #B2B2B4;
+}
+.configurator-box .configurator-box-wrapper .main .head-box .steps-bars .bars {
+  display: flex;
+  gap: 4px;
+}
+.configurator-box .configurator-box-wrapper .main .head-box .steps-bars .bars .bar {
+  height: 8px;
+  background-color: #FEE3B8;
+  width: 12px;
+  border-radius: 12px;
+}
+.configurator-box .configurator-box-wrapper .main .head-box .steps-bars .bars .bar.active {
+  width: 16px;
+  background-color: #FCA311;
+}
+.configurator-box .configurator-box-wrapper .main .content {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.configurator-box .configurator-box-wrapper .main .content .box {
+  padding: 32px 24px;
+  border-radius: 12px;
+  gap: 24px;
+  flex-shrink: 0;
+  flex-direction: column;
+  display: flex;
+  border: 1px solid rgba(204, 204, 207, 0.2509803922);
+  background-color: #FEFEFE;
+  background-image: radial-gradient(120% 120% at 75% 160%, rgba(204, 204, 207, 0.3), rgba(204, 204, 207, 0));
+  box-shadow: 0px 8px 16px 0px rgba(204, 204, 207, 0.2392156863);
+  cursor: pointer;
+}
+.configurator-box .configurator-box-wrapper .main .content .box.xl-w-50 {
+  flex-basis: calc(50% - 6px);
+}
+.configurator-box .configurator-box-wrapper .main .content .box.xl-w-25 {
+  flex-basis: calc(25% - 9px);
+}
+.configurator-box .configurator-box-wrapper .main .content .box.xl-w-33 {
+  flex-basis: calc(33.33333% - 8px);
+}
+.configurator-box .configurator-box-wrapper .main .content .box.gap-16 {
+  gap: 16px;
+}
+.configurator-box .configurator-box-wrapper .main .content .box.gap-24 {
+  gap: 24px;
+}
+.configurator-box .configurator-box-wrapper .main .content .box .icon {
+  display: flex;
+}
+.configurator-box .configurator-box-wrapper .main .content .box .icon.new-car {
+  background-image: url("../img/icons/car-new.svg");
+  background-repeat: no-repeat;
+  height: 48px;
+}
+.configurator-box .configurator-box-wrapper .main .content .box .icon.used-car {
+  background-image: url("../img/icons/car-used.svg");
+  background-repeat: no-repeat;
+  height: 48px;
+}
+.configurator-box .configurator-box-wrapper .main .content .box .image {
+  display: flex;
+  width: 100%;
+  height: 120px;
+}
+.configurator-box .configurator-box-wrapper .main .content .box .image img {
+  width: 100%;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.configurator-box .configurator-box-wrapper .main .content .box .content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.configurator-box .configurator-box-wrapper .main .content .box .features-list {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.configurator-box .configurator-box-wrapper .main .content .box .features-list .list-title {
+  font-family: "WorkSans", sans-serif;
+  font-size: 16px;
+  color: #020206;
+}
+.configurator-box .configurator-box-wrapper .main .content .box .features-list ul {
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px 0 24px;
+  list-style-image: url("../img/icons/triangle-list-black.svg");
+  font-family: "WorkSans", sans-serif;
+  font-size: 14px;
+  color: #020206;
+}
+.configurator-box .configurator-box-wrapper .main .content .box .text-box .main-text {
+  font-weight: normal;
+  font-size: 24px;
+  font-family: "WorkSans", sans-serif;
+}
+.configurator-box .configurator-box-wrapper .main .content .box .text-box .sub-text {
+  font-size: 14px;
+  font-family: "WorkSans", sans-serif;
+  color: #B2B2B4;
+}
+.configurator-box .configurator-box-wrapper .main .content .select-box .circle {
+  border: 2px solid #45D5EC;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.configurator-box .configurator-box-wrapper .main .content .select-box.selected {
+  background-color: #45D5EC;
+  border: 1px solid rgba(165, 250, 243, 0.2509803922);
+  box-shadow: 0px 0px 16px 0px rgba(165, 250, 243, 0.4784313725) inset, 0px 4px 8px 0px rgba(165, 250, 243, 0.2392156863);
+}
+.configurator-box .configurator-box-wrapper .main .content .select-box.selected .text-box .main-text {
+  color: #FEFEFE;
+}
+.configurator-box .configurator-box-wrapper .main .content .select-box.selected .text-box .sub-text {
+  color: #FEFEFE;
+}
+.configurator-box .configurator-box-wrapper .main .content .select-box.selected .features-list .list-title {
+  color: #FEFEFE;
+}
+.configurator-box .configurator-box-wrapper .main .content .select-box.selected .features-list ul {
+  list-style-image: url("../img/icons/triangle-list-white.svg");
+}
+.configurator-box .configurator-box-wrapper .main .content .select-box.selected .features-list ul li {
+  color: #FEFEFE;
+}
+.configurator-box .configurator-box-wrapper .main .content .select-box.selected .new-car {
+  background-image: url("../img/icons/car-new-white.svg");
+}
+.configurator-box .configurator-box-wrapper .main .content .select-box.selected .used-car {
+  background-image: url("../img/icons/car-used-white.svg");
+}
+.configurator-box .configurator-box-wrapper .main .content .select-box.selected .circle {
+  border: 2px solid #FEFEFE;
+}
+.configurator-box .configurator-box-wrapper .main .content .select-box:not(.selected):hover {
+  background-color: #FEFEFE;
+  background-image: radial-gradient(117% 117% at 75% 157%, rgba(69, 213, 236, 0.3) 0%, rgba(69, 213, 236, 0) 100%);
+  border: 1px solid rgba(69, 213, 236, 0.2509803922);
+  box-shadow: 0px 0px 8px 0px rgba(69, 213, 236, 0.2392156863);
+}
+.configurator-box .configurator-box-wrapper .main .additional-wrapper-out {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.configurator-box .configurator-box-wrapper .main .additional-wrapper-out .additional-wrapper-in {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.configurator-box .configurator-box-wrapper .summary {
+  display: flex;
+  padding-bottom: 24px;
+  gap: 139px;
+  border-bottom: 1px solid;
+  border-bottom: 1px solid #CCCCCF;
+  justify-content: space-between;
+}
+.configurator-box .configurator-box-wrapper .summary .notes-wrapper {
+  display: flex;
+  width: 451px;
+}
+.configurator-box .configurator-box-wrapper .summary .notes-wrapper .note {
+  font-family: "WorkSans", sans-serif;
+  font-size: 10px;
+  color: #B2B2B4;
+}
+.configurator-box .configurator-box-wrapper .summary .pricing-wrapper {
+  display: flex;
+  width: 578px;
+  justify-content: space-between;
+}
+.configurator-box .configurator-box-wrapper .summary .pricing-wrapper .cost .value-wrapper {
+  display: flex;
+  align-items: first baseline;
+  gap: 16px;
+}
+.configurator-box .configurator-box-wrapper .summary .pricing-wrapper .cost .value-wrapper .info {
+  font-family: "WorkSans", sans-serif;
+  font-size: 16px;
+  color: #45D5EC;
+}
+.configurator-box .configurator-box-wrapper .summary .pricing-wrapper .value {
+  font-family: "Video400", sans-serif;
+  font-size: 32px;
+  letter-spacing: -0.01em;
+  color: #45D5EC;
+}
+.configurator-box .configurator-box-wrapper .summary .pricing-wrapper .note {
+  font-family: "WorkSans", sans-serif;
+  font-size: 14px;
+  color: #45D5EC;
+}
+.configurator-box .configurator-box-wrapper .summary-box {
+  display: flex;
+  flex-direction: column;
+}
+.configurator-box .configurator-box-wrapper .summary-box .items-box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.configurator-box .configurator-box-wrapper .summary-box .items-box .item {
+  display: flex;
+  flex-direction: column;
+}
+.configurator-box .configurator-box-wrapper .summary-box .items-box .item .top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #CCCCCF;
+  padding-bottom: 6px;
+  align-items: flex-end;
+}
+.configurator-box .configurator-box-wrapper .summary-box .items-box .item .top .item-name {
+  font-family: "WorkSans", sans-serif;
+  font-size: 24px;
+  color: #020206;
+  font-weight: normal;
+}
+.configurator-box .configurator-box-wrapper .summary-box .items-box .item .top .item-value {
+  font-family: "Video400", sans-serif;
+  font-size: 32px;
+  letter-spacing: -0.01em;
+  color: #45D5EC;
+  font-weight: normal;
+  width: 280px;
+  flex-shrink: 0;
+}
+.configurator-box .configurator-box-wrapper .summary-box .items-box .item .bottom {
+  padding-top: 6px;
+  font-family: "WorkSans", sans-serif;
+  font-size: 16px;
+  color: #020206;
+  display: flex;
+  align-items: flex-start;
+}
+.configurator-box .configurator-box-wrapper .summary-box .total-price {
+  width: 280px;
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+}
+.configurator-box .configurator-box-wrapper .summary-box .total-price .top {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+}
+.configurator-box .configurator-box-wrapper .summary-box .total-price .top .value {
+  font-family: "Video400", sans-serif;
+  font-size: 32px;
+  letter-spacing: -0.01em;
+  color: #45D5EC;
+}
+.configurator-box .configurator-box-wrapper .summary-box .total-price .top .tax-info {
+  font-family: "WorkSans", sans-serif;
+  font-size: 16px;
+  color: #45D5EC;
+}
+.configurator-box .configurator-box-wrapper .summary-box .total-price .bottom {
+  font-family: "WorkSans", sans-serif;
+  font-size: 14px;
+  color: #45D5EC;
+}
+.configurator-box .configurator-box-wrapper .summary-box .notes-wrapper {
+  margin-top: 12px;
+}
+.configurator-box .configurator-box-wrapper .summary-box .notes-wrapper .note {
+  font-family: "WorkSans", sans-serif;
+  font-size: 10px;
+  color: #B2B2B4;
+}
+.configurator-box .configurator-box-wrapper .copy-to-email {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 32px 24px;
+  gap: 24px;
+  border: 1px solid rgba(204, 204, 207, 0.2509803922);
+  box-shadow: 0px 8px 16px 0px rgba(204, 204, 207, 0.2392156863);
+  background: linear-gradient(0deg, #FEFEFE, #FEFEFE), radial-gradient(116.77% 116.77% at 74.48% 156.71%, rgba(204, 204, 207, 0.3) 0%, rgba(204, 204, 207, 0) 100%);
+}
+.configurator-box .configurator-box-wrapper .copy-to-email .title {
+  font-family: "WorkSans", sans-serif;
+  font-size: 24px;
+  color: #020206;
+  font-weight: normal;
+}
+.configurator-box .configurator-box-wrapper .copy-to-email .input-container {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.configurator-box .configurator-box-wrapper .copy-to-email .input-container input {
+  padding: 14px 32px;
+  border: 1px solid #020206;
+  box-shadow: 4px 4px 8px 0px rgba(252, 209, 156, 0.2) inset, 0px 0px 8px 0px rgba(247, 232, 190, 0.1607843137);
+  font-family: "Video300", sans-serif;
+  font-size: 16px;
+  color: #020206;
+  border-radius: 52px;
+}
+.configurator-box .configurator-box-wrapper .copy-to-email .input-container input::-moz-placeholder {
+  color: #B2B2B4;
+  opacity: 1;
+}
+.configurator-box .configurator-box-wrapper .copy-to-email .input-container input:-ms-input-placeholder {
+  color: #B2B2B4;
+  opacity: 1;
+}
+.configurator-box .configurator-box-wrapper .copy-to-email .input-container input::placeholder {
+  color: #B2B2B4;
+  opacity: 1;
+}
+.configurator-box .configurator-box-wrapper .copy-to-email .input-container .checkbox-and-button {
+  display: flex;
+  gap: 24px;
+}
+.configurator-box .configurator-box-wrapper .copy-to-email .input-container .checkbox-and-button .checkbox-container {
+  display: flex;
+  gap: 12px;
+}
+.configurator-box .configurator-box-wrapper .copy-to-email .input-container .checkbox-and-button .checkbox-container .checkbox {
+  width: 28px;
+  height: 28px;
+}
+.configurator-box .configurator-box-wrapper .copy-to-email .input-container .checkbox-and-button .checkbox-container .checkbox .checkmark {
+  background-color: #fff;
+  border: 1px solid #CCCCCF;
+}
+.configurator-box .configurator-box-wrapper .copy-to-email .input-container .checkbox-and-button .checkbox-container .checkbox input:checked ~ .checkmark {
+  background-color: #45D5EC;
+  border: 1px #45D5EC solid;
+}
+.configurator-box .configurator-box-wrapper .copy-to-email .input-container .checkbox-and-button .checkbox-container .checkbox .checkmark:after {
+  left: 10px;
+  top: 5px;
+  width: 4px;
+  height: 11px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.configurator-box .configurator-box-wrapper .copy-to-email .input-container .checkbox-and-button .checkbox-container label:nth-of-type(2) {
+  font-family: "WorkSans", sans-serif;
+  font-size: 10px;
+  color: #B2B2B4;
+}
+.configurator-box .configurator-box-wrapper .copy-to-email .error-box {
+  font-family: "WorkSans", sans-serif;
+  font-size: 12px;
+  color: red;
+}
+.configurator-box .configurator-box-wrapper .copy-to-email .success-box {
+  font-family: "WorkSans", sans-serif;
+  font-size: 12px;
+  color: green;
+}
+
+.buttons {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+.buttons .buttons-wrapper {
+  display: flex;
+  gap: 12px;
+}
+.buttons .buttons-wrapper .button-parent-transparent {
+  background-image: linear-gradient(white, white), radial-gradient(173.15% 173.15% at 24.76% 186.11%, #F51542 0%, rgba(245, 21, 66, 0) 100%), linear-gradient(0deg, #FCA311, #FCA311);
+  border: double 2px transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box, border-box;
+  border-radius: 50px;
+}
+.buttons .buttons-wrapper .button-parent-transparent.skip-long.hidden {
+  display: none;
+}
+.buttons .buttons-wrapper .button {
+  gap: 10px;
+  padding: 14px 32px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.buttons .buttons-wrapper .button.next {
+  background-color: #FCA311;
+  background-image: radial-gradient(170% 170% at 25% 180%, #F51542, rgba(245, 21, 66, 0));
+  box-shadow: inset 4px 4px 8px 0px rgba(252, 209, 156, 0.2);
+  filter: drop-shadow(0px 0px 8px rgba(247, 232, 190, 0.1607843137));
+}
+.buttons .buttons-wrapper .button.next p {
+  color: #FEFEFE;
+}
+.buttons .buttons-wrapper .button.prev p, .buttons .buttons-wrapper .button.skip p {
+  color: #FCA311;
+}
+.buttons .buttons-wrapper .button p {
+  font-family: "Video300", sans-serif;
+}
+.buttons .buttons-wrapper .button img {
+  height: 9px;
+}
+.buttons .buttons-wrapper .button.hidden {
+  display: none;
+}
+
+@media (max-width: 1340px) {
+  .container {
+    width: 1020px;
+  }
+
+  .form-pages .form-page {
+    width: 1020px;
+  }
+  .form-pages .form-page .configurator-box {
+    width: 960px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper {
+    gap: 36px;
+    padding: 48px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .main .content .box.l-w-50 {
+    flex-basis: calc(50% - 6px);
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary {
+    flex-direction: column;
+    gap: 36px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary .notes-wrapper {
+    width: 600px;
+    order: 1;
+    align-self: flex-end;
+    text-align: right;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary .pricing-wrapper {
+    order: 0;
+    align-self: flex-end;
+  }
+
+  .configuration-box-container {
+    width: 960px;
+    flex-direction: column;
+  }
+  .configuration-box-container .reservation {
+    margin-bottom: 36px;
+  }
+  .configuration-box-container .reservation .reservation-box {
+    width: auto;
+    margin-left: 0;
+    margin-top: 32px;
+    padding: 48px 38px;
+    gap: 36px;
+  }
+  .configuration-box-container .reservation .reservation-box .text {
+    text-align: center;
+  }
+  .configuration-box-container .reservation .reservation-box .buttons {
+    justify-content: center;
+  }
+  .configuration-box-container .reservation .reservation-box .buttons .buttons-wrapper {
+    width: 300px;
+  }
+}
+@media (max-width: 1020px) {
+  .container {
+    width: 760px;
+  }
+
+  .form-pages .form-page {
+    width: 760px;
+  }
+  .form-pages .form-page .configurator-box {
+    width: 700px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper {
+    gap: 36px;
+    padding: 48px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .main .content .box.m-w-50 {
+    flex-basis: calc(50% - 6px);
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .main .content .box.m-w-100 {
+    flex-basis: 100%;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .main .buttons:has(.skip-long) {
+    position: relative;
+    margin-top: 70px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .main .buttons:has(.skip-long) .buttons-wrapper:has(.skip-long) .button-parent-transparent.skip-long {
+    position: absolute;
+    bottom: 50px;
+    right: 50%;
+    transform: translateX(50%);
+    width: -moz-max-content;
+    width: max-content;
+    margin-bottom: 30px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary {
+    flex-direction: column;
+    gap: 36px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary .notes-wrapper {
+    width: 600px;
+    order: 1;
+    align-self: flex-end;
+    text-align: center;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary .pricing-wrapper {
+    order: 0;
+    align-self: center;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary-box .items-box .item .top .item-name {
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary-box .items-box .item .top .item-value {
+    width: 250px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary-box .total-price {
+    width: 250px;
+  }
+
+  .configuration-box-container {
+    width: 700px;
+    flex-direction: column;
+  }
+  .configuration-box-container .reservation {
+    margin-bottom: 36px;
+  }
+  .configuration-box-container .reservation .reservation-box {
+    width: auto;
+    margin-left: 0;
+    margin-top: 32px;
+    padding: 48px 38px;
+    gap: 36px;
+  }
+  .configuration-box-container .reservation .reservation-box .text {
+    text-align: center;
+  }
+  .configuration-box-container .reservation .reservation-box .buttons {
+    justify-content: center;
+  }
+  .configuration-box-container .reservation .reservation-box .buttons .buttons-wrapper {
+    width: 300px;
+  }
+}
+@media (max-width: 760px) {
+  .container {
+    width: calc(100vw - 40px + 40px);
+  }
+
+  .head-button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .form-pages .form-page {
+    width: calc(100vw - 40px + 40px);
+    padding: 12px;
+  }
+  .form-pages .form-page .configurator-box {
+    width: 100%;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper {
+    gap: 24x;
+    padding: 16px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .main .head-box {
+    position: relative;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .main .head-box .titles .title {
+    font-size: 26px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .main .head-box .steps-bars {
+    position: absolute;
+    right: 5px;
+    top: -42px;
+    flex-direction: column;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .main .head-box .steps-bars .desc {
+    display: none;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .main .content .box {
+    padding: 16px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .main .content .box.m-w-50 {
+    flex-basis: calc(50% - 6px);
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .main .content .box.m-w-100 {
+    flex-basis: 100%;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .main .content .box.s-w-100 {
+    flex-basis: 100%;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .main .buttons:has(.skip-long) {
+    position: relative;
+    margin-top: 110px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .main .buttons:has(.skip-long) .buttons-wrapper:has(.skip-long) .button-parent-transparent.skip-long {
+    position: absolute;
+    bottom: 50px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary {
+    flex-direction: column;
+    gap: 36px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary .notes-wrapper {
+    width: 100%;
+    order: 1;
+    align-self: flex-end;
+    text-align: right;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary .pricing-wrapper {
+    order: 0;
+    flex-direction: column;
+    width: auto;
+    align-self: flex-end;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary .pricing-wrapper .value {
+    font-size: 28px;
+    text-align: right;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary .pricing-wrapper .note {
+    font-size: 12px;
+    text-align: right;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary .pricing-wrapper .cost .value-wrapper {
+    justify-content: flex-end;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary-box .items-box .item .top {
+    flex-direction: column;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary-box .items-box .item .top .item-name {
+    overflow: hidden;
+    margin-right: 20px;
+    order: 1;
+    align-self: flex-start;
+    width: 100%;
+    font-size: 18px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary-box .items-box .item .top .item-value {
+    width: auto;
+    align-self: flex-end;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary-box .items-box .item .bottom {
+    font-size: 12px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .summary-box .total-price {
+    width: 250px;
+    margin-top: 50px;
+  }
+  .form-pages .form-page .configurator-box .configurator-box-wrapper .copy-to-email .input-container .checkbox-and-button {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .configuration-box-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .configuration-box-container .reservation {
+    margin-bottom: 36px;
+  }
+  .configuration-box-container .reservation .reservation-box {
+    width: auto;
+    margin-left: 0;
+    margin-top: 32px;
+    padding: 48px 38px;
+    gap: 36px;
+  }
+  .configuration-box-container .reservation .reservation-box .text {
+    text-align: center;
+    font-size: 24px;
+  }
+  .configuration-box-container .reservation .reservation-box .buttons {
+    justify-content: center;
+  }
+  .configuration-box-container .reservation .reservation-box .buttons .buttons-wrapper {
+    width: 300px;
+  }
+
+  .buttons .buttons-wrapper {
+    align-self: flex-end;
+    flex-direction: column;
+  }
+}
+/*# sourceMappingURL=main.css.map */

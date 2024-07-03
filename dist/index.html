@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css?cache_bust=1719992576060">
+    <link rel="shortcut icon" href="#">
+
+    <title>Formularz</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-pages">
+
+            <div class="form-page page1">
+                <div class="head-button">Konfigurator kosztów</div>
+                <div class="configurator-box">
+                    <div class="configurator-box-wrapper">
+                        <div class="main">
+                            <div class="head-box">
+                                <div class="titles">
+                                    <h3 class="title">Wybierz stan swojego pojazdu:</h3>
+                                    <div class="subtitle">(jednokrotny wybór)</div>
+                                </div>
+                                <div class="steps-bars">
+                                    <div class="desc">Etap:</div>
+                                    <div class="bars">
+                                        <div class="bar active"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <!-- <div class="bar"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content once">
+                                <div class="box select-box xl-w-50" data-var_name="page1" data-var_value="1">
+                                    <div class="icon new-car"></div>
+                                    <div class="text-box">
+                                        <h5 class="main-text">Nowe</h5>
+                                        <div class="sub-text">(przebieg poniżej 1 000 km)</div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-50" data-var_name="page1" data-var_value="2">
+                                    <div class="icon used-car"></div>
+                                    <div class="text-box">
+                                        <h5 class="main-text">Używane</h5>
+                                        <div class="sub-text">(przebieg powyżej 1 000 km)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="buttons-wrapper left">
+                                    <div class="button prev"></div>
+                                </div>
+                                <div class="buttons-wrapper right">
+                                    <div class="button skip"></div>
+                                    <div class="button next move-next">
+                                        <p>Dalej</p>
+                                        <img src="./img/icons/triangle-next.svg" alt="triangle-next">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary">
+                            <div class="notes-wrapper">
+                                <div class="note">*Każda wycena wymaga weryfikacji stanu samochodu przed
+                                    podaniem
+                                    ostatecznej
+                                    ceny.
+                                    Podane ceny są brutto/netto na podstawie art. 113 ust. 1 i 9 ustawy o VAT.
+                                    Liczba
+                                    godzin
+                                    oznacza
+                                    szacowany czas na wykonanie usługi.</div>
+                            </div>
+                            <div class="pricing-wrapper">
+                                <div class="hours">
+                                    <div class="value totalTime">0h / 0 dni</div>
+                                    <div class="note">Szacowana liczba godzin / dni roboczych*</div>
+                                </div>
+                                <div class="cost">
+                                    <div class="value-wrapper">
+                                        <div class="value totalPrice"> od 0 pln*</div>
+                                        <div class="info"></div>
+                                    </div>
+                                    <div class="note">Szacowany koszt*</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-page page2">
+                <div class="head-button">Konfigurator kosztów</div>
+                <div class="configurator-box">
+                    <div class="configurator-box-wrapper">
+                        <div class="main">
+                            <div class="head-box">
+                                <div class="titles">
+                                    <h3 class="title">Wybierz wielkość swojego pojazdu:</h3>
+                                    <div class="subtitle">(jednokrotny wybór)</div>
+                                </div>
+                                <div class="steps-bars">
+                                    <div class="desc">Etap:</div>
+                                    <div class="bars">
+                                        <div class="bar"></div>
+                                        <div class="bar active"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <!-- <div class="bar"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content once">
+                                <div class="box select-box xl-w-25 m-w-50" data-var_name="page2" data-var_value="0">
+                                    <div class="icon">
+                                        <img src="./img/icons/car-small.svg" alt="car-small">
+                                    </div>
+                                    <div class="text-box">
+                                        <h5 class="main-text">Małe</h5>
+                                        <div class="sub-text">np. Audi A1, Toyota Yaris, Fiat 500</div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-25 m-w-50" data-var_name="page2" data-var_value="1">
+                                    <div class="icon">
+                                        <img src="./img/icons/car-medium.svg" alt="car-medium">
+                                    </div>
+                                    <div class="text-box">
+                                        <h5 class="main-text">Średnie</h5>
+                                        <div class="sub-text">np. Renault Megane 3 Coupe, Seat Ibiza, Ford Focus
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-25 m-w-50" data-var_name="page2" data-var_value="2">
+                                    <div class="icon">
+                                        <img src="./img/icons/car-big.svg" alt="car-big">
+                                    </div>
+                                    <div class="text-box">
+                                        <h5 class="main-text">Duże i SUV</h5>
+                                        <div class="sub-text">np. Audi A5, Audi A7, BMW X5</div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-25 m-w-50" data-var_name="page2" data-var_value="3">
+                                    <div class="icon">
+                                        <img src="./img/icons/car-bigest.svg" alt="car-bigest">
+                                    </div>
+                                    <div class="text-box">
+                                        <h5 class="main-text">Duże SUV i większe</h5>
+                                        <div class="sub-text">np. Mercedes GLS, Volkswagen T7</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="buttons-wrapper left">
+                                    <div class="button-parent-transparent">
+                                        <div class="button prev">
+                                            <img src="./img/icons/triangle-prev.svg" alt="triangle-next">
+                                            <p>Wstecz</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons-wrapper right">
+                                    <div class="button skip"></div>
+                                    <div class="button next move-next">
+                                        <p>Dalej</p>
+                                        <img src="./img/icons/triangle-next.svg" alt="triangle-next">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary">
+                            <div class="notes-wrapper">
+                                <div class="note">*Każda wycena wymaga weryfikacji stanu samochodu przed podaniem
+                                    ostatecznej
+                                    ceny.
+                                    Podane ceny są brutto/netto na podstawie art. 113 ust. 1 i 9 ustawy o VAT.
+                                    Liczba
+                                    godzin
+                                    oznacza
+                                    szacowany czas na wykonanie usługi.</div>
+                            </div>
+                            <div class="pricing-wrapper">
+                                <div class="hours">
+                                    <div class="value totalTime">0h / 0 dni</div>
+                                    <div class="note">Szacowana liczba godzin / dni roboczych*</div>
+                                </div>
+                                <div class="cost">
+                                    <div class="value-wrapper">
+                                        <div class="value totalPrice"> od 0 pln*</div>
+                                        <div class="info"></div>
+                                    </div>
+                                    <div class="note">Szacowany koszt*</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-page page3">
+                <div class="head-button">Konfigurator kosztów</div>
+                <div class="configurator-box">
+                    <div class="configurator-box-wrapper">
+                        <div class="main">
+                            <div class="head-box">
+                                <div class="titles">
+                                    <h3 class="title">Wybierz kategorię:</h3>
+                                    <div class="subtitle">(wielokrotny wybór)</div>
+                                </div>
+                                <div class="steps-bars">
+                                    <div class="desc">Etap:</div>
+                                    <div class="bars">
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar active"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <!-- <div class="bar"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content multi">
+                                <div class="box select-box xl-w-50 s-w-100 gap-24" data-var_name="page3_1">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_1" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Stylizacja</h5>
+                                            <div class="sub-text">czyli przyciemnienie szyb, przyciemnienie lamp,
+                                                dechroming, zmiana koloru całego samochodu, zmiana koloru dachu,
+                                                zmiana
+                                                koloru lusterek</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę kategorię?</div>
+                                            <ul>
+                                                <li>zależy Ci na podkreśleniu sylwetki samochodu</li>
+                                                <li>chcesz by Twój samochód  wyróżniał się wśród innych</li>
+                                                <li>chcesz zwiększyć bezpieczeństwo i dyskrecje</li>
+                                                <li>chcesz, żeby Twoje auto wyglądało nowocześniej</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-50 s-w-100 gap-24" data-var_name="page3_2">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Renowacja i ochrona lakieru</h5>
+                                            <div class="sub-text">wybór dotyczący stanu lakieru, jednoetapowej lub
+                                                dwu
+                                                etapowej korekty oraz preferowanego zabezpieczenia</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę kategorię?</div>
+                                            <ul>
+                                                <li>chcesz, żeby zarysowania zniknęły z powierzchni Twojego lakieru
+                                                </li>
+                                                <li>chcesz, żeby Twój lakier się błyszczał</li>
+                                                <li>chcesz, żeby bieżąca pielęgnacja Twojego auta była
+                                                    przyjemniejsza
+                                                </li>
+                                                <li>chcesz uchronić samochód przed niekorzystnymi warunkami
+                                                    atmosferycznymi</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-50 s-w-100 gap-24" data-var_name="page3_3">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Bezbarwne folie ochronne ppf</h5>
+                                            <div class="sub-text">pakiet bikini, pakiet full front, pakiet full body
+                                            </div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę kategorię?</div>
+                                            <ul>
+                                                <li>chcesz, żeby karoseria Twojego samochodu była zabezpieczona
+                                                    przed
+                                                    uszkodzeniami mechanicznymi</li>
+                                                <li>chcesz, żeby Twój lakier po 10 latach użytkowania był w idealnym
+                                                    stanie- lakier wolny od odprysków i zarysowań</li>
+                                                <li>gdy znaczną część swoich podróży spędzasz na autostradach</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="box select-box xl-w-33 gap-16" data-var_name="page3_4">
+                                <<div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Wnętrze</h5>
+                                            <div class="sub-text">podstawowe czyszczenie wnętrza lub detailing
+                                                wnętrza
+                                            </div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę kategorię?</div>
+                                            <ul>
+                                                <li>chcesz podstawowo zadbać o wnętrze swojego samochodu</li>
+                                                <li>chcesz kompleksowo zadbać o wnętrze swojego samochodu</li>
+                                                <li>chcesz zabezpieczyć swoją tapicerkę</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="box select-box xl-w-50 s-w-100 gap-24" data-var_name="page3_5">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Dodatkowe</h5>
+                                            <div class="sub-text">dodatkowe usługi zabezpieczenia pozostałych części
+                                                karoserii</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę kategorię?</div>
+                                            <ul>
+                                                <li>chcesz poprawić widoczność na drodze po zmroku</li>
+                                                <li>chcesz uchronić się przed kosztami wymiany lamp na nowe</li>
+                                                <li>chcesz żeby materiałowi w Twoim cabrio nie był straszny deszcz
+                                                </li>
+                                                <li>chcesz niskim kosztem zabezpieczyć i polepszyć wygląd karoserii
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="buttons-wrapper left">
+                                    <div class="button-parent-transparent">
+                                        <div class="button prev">
+                                            <img src="./img/icons/triangle-prev.svg" alt="triangle-next">
+                                            <p>Wstecz</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons-wrapper right">
+                                    <!-- <div class="button-parent-transparent">
+                                        <div class="button skip">
+                                            <p>Pomiń</p>
+                                            <img src="./img/icons/triangle-skip.svg" alt="triangle-skip">
+                                        </div>
+                                    </div> -->
+                                    <div class="button next move-next">
+                                        <p>Dalej</p>
+                                        <img src="./img/icons/triangle-next.svg" alt="triangle-next">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary">
+                            <div class="notes-wrapper">
+                                <div class="note">*Każda wycena wymaga weryfikacji stanu samochodu przed podaniem
+                                    ostatecznej
+                                    ceny.
+                                    Podane ceny są brutto/netto na podstawie art. 113 ust. 1 i 9 ustawy o VAT.
+                                    Liczba
+                                    godzin
+                                    oznacza
+                                    szacowany czas na wykonanie usługi.</div>
+                            </div>
+                            <div class="pricing-wrapper">
+                                <div class="hours">
+                                    <div class="value totalTime">0h / 0 dni</div>
+                                    <div class="note">Szacowana liczba godzin / dni roboczych*</div>
+                                </div>
+                                <div class="cost">
+                                    <div class="value-wrapper">
+                                        <div class="value totalPrice"> od 0 pln*</div>
+                                        <div class="info"></div>
+                                    </div>
+                                    <div class="note">Szacowany koszt*</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-page page3_1 hidden">
+                <div class="head-button">Konfigurator kosztów</div>
+                <div class="configurator-box">
+                    <div class="configurator-box-wrapper">
+                        <div class="main">
+                            <div class="head-box">
+                                <div class="titles">
+                                    <h3 class="title">Wybierz rodzaj stylizacji:</h3>
+                                    <div class="subtitle">(wielokrotny wybór)</div>
+                                </div>
+                                <div class="steps-bars">
+                                    <div class="desc">Etap:</div>
+                                    <div class="bars">
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar active"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <!-- <div class="bar"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content multi">
+                                <div class="box select-box xl-w-33 l-w-50 s-w-100 gap-16" data-var_name="page3_1_1">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_1" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Przyciemnienie szyb</h5>
+                                            <div class="sub-text">wizualna zmiana sylwetki i ochrona Twojego wnętrza
+                                            </div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>chcesz żeby rzeczy pozostawione we wnętrzu były niewidoczne</li>
+                                                <li>chcesz uchronić pasażerów od szkodliwego promieniowania UV</li>
+                                                <li>chcesz żeby wnętrze auta wolniej się nagrzewało</li>
+                                                <li>chcesz żeby Twój samochód lepiej się prezentował</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-33 l-w-50 s-w-100 gap-16" data-var_name="page3_1_2">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Przyciemnienie lamp (para)</h5>
+                                            <div class="sub-text">stylizacja i ochrona Twoich reflektorów</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>chcesz, żeby Twoje lampy były zabezpieczone, a jednocześnie
+                                                    przydymione</li>
+                                                <li>chcesz, żeby Twoje lampy były chronione przed uszkodzeniami
+                                                    mechanicznymi</li>
+                                                <li>chcesz, uchronić siebie przed niechcianym wydatkiem wymiany na
+                                                    nowe
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-33 l-w-50 s-w-100 gap-16" data-var_name="page3_1_3">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Dechroming</h5>
+                                            <div class="sub-text">czyli zmiana wizualna elementów chromowanych na
+                                                Twojej
+                                                karoserii</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>chcesz odmłodzić swój samochód</li>
+                                                <li>twoje chromy są już zniszczone i nieestetyczne</li>
+                                                <li>chcesz dodać elegancji swojemu samochodowi</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-33 l-w-50 s-w-100 gap-16" data-var_name="page3_1_4">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Zmiana koloru całego auta</h5>
+                                            <div class="sub-text">zmiana wizualna, dzięki stylizacji folią do zmiany
+                                                koloru
+                                            </div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>jeśli znudził Ci się kolor Twojego lakieru</li>
+                                                <li>chcesz wyróżniać się na drodze</li>
+                                                <li>szeroki wybór z palety kolorów</li>
+                                                <li>chcesz mieć reklamę swojej firmy na aucie</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-33 l-w-50 s-w-100 gap-16" data-var_name="page3_1_5">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Zmiana koloru dachu</h5>
+                                            <div class="sub-text">delikatna stylizacja elementu karoserii</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>gdy chcesz, by kolor Twojego dachu wyróżniał się na tle innych
+                                                    części karoserii</li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-33 l-w-50 s-w-100 gap-16" data-var_name="page3_1_6">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Zmiana koloru lusterek</h5>
+                                            <div class="sub-text">delikatna stylizacja elementu karoserii</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>gdy chcesz, żeby kolor Twoich lusterek wyróżniał się na tle innych
+                                                    części karoserii</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="buttons-wrapper left">
+                                    <div class="button-parent-transparent">
+                                        <div class="button prev">
+                                            <img src="./img/icons/triangle-prev.svg" alt="triangle-next">
+                                            <p>Wstecz</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons-wrapper right">
+                                    <!-- <div class="button-parent-transparent">
+                                        <div class="button skip">
+                                            <p>Pomiń</p>
+                                            <img src="./img/icons/triangle-skip.svg" alt="triangle-skip">
+                                        </div>
+                                    </div> -->
+                                    <div class="button next move-next">
+                                        <p>Dalej</p>
+                                        <img src="./img/icons/triangle-next.svg" alt="triangle-next">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary">
+                            <div class="notes-wrapper">
+                                <div class="note">*Każda wycena wymaga weryfikacji stanu samochodu przed podaniem
+                                    ostatecznej
+                                    ceny.
+                                    Podane ceny są brutto/netto na podstawie art. 113 ust. 1 i 9 ustawy o VAT.
+                                    Liczba
+                                    godzin
+                                    oznacza
+                                    szacowany czas na wykonanie usługi.</div>
+                            </div>
+                            <div class="pricing-wrapper">
+                                <div class="hours">
+                                    <div class="value totalTime">0h / 0 dni</div>
+                                    <div class="note">Szacowana liczba godzin / dni roboczych*</div>
+                                </div>
+                                <div class="cost">
+                                    <div class="value-wrapper">
+                                        <div class="value totalPrice"> od 0 pln*</div>
+                                        <div class="info"></div>
+                                    </div>
+                                    <div class="note">Szacowany koszt*</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-page page3_2 hidden">
+                <div class="head-button">Konfigurator kosztów</div>
+                <div class="configurator-box">
+                    <div class="configurator-box-wrapper">
+                        <div class="main gap48">
+                            <div class="head-box">
+                                <div class="titles">
+                                    <h3 class="title">Renowacja lakieru</h3>
+                                    <div class="subtitle">(wielokrotny wybór)</div>
+                                </div>
+                                <div class="steps-bars">
+                                    <div class="desc">Etap:</div>
+                                    <div class="bars">
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar active"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <!-- <div class="bar"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="additional-wrapper-out">
+                                <div class="additional-wrapper-in">
+                                    <div class="head-box">
+                                        <div class="titles">
+                                            <h3 class="title">Jaki jest stan Twojego lakieru?</h3>
+                                            <div class="subtitle">(jednokrotny wybór)</div>
+                                        </div>
+                                    </div>
+                                    <div class="content once">
+                                        <div class="box select-box xl-w-25 m-w-50" data-var_name="page3_2_1"
+                                            data-var_value="1">
+                                            <div class="image">
+                                                <img src="./img/nowy-lakier.jpeg" alt="car-paint">
+                                            </div>
+                                            <div class="text-box">
+                                                <h5 class="main-text">Nowy</h5>
+                                                <div class="sub-text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="box select-box xl-w-25 m-w-50" data-var_name="page3_2_1"
+                                            data-var_value="2">
+                                            <div class="image">
+                                                <img src="./img/1-6-lakier.jpeg" alt="car-paint">
+                                            </div>
+                                            <div class="text-box">
+                                                <h5 class="main-text">1-6 miesięcy</h5>
+                                                <div class="sub-text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="box select-box xl-w-25 m-w-50" data-var_name="page3_2_1"
+                                            data-var_value="3">
+                                            <div class="image">
+                                                <img src="./img/6-12-lakier.jpeg" alt="car-paint">
+                                            </div>
+                                            <div class="text-box">
+                                                <h5 class="main-text">6-12 miesięcy</h5>
+                                                <div class="sub-text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="box select-box xl-w-25 m-w-50" data-var_name="page3_2_1"
+                                            data-var_value="4">
+                                            <div class="image">
+                                                <img src="./img/pon-12-lakier.jpeg" alt="car-paint">
+                                            </div>
+                                            <div class="text-box">
+                                                <h5 class="main-text">Pow. 12 miesięcy</h5>
+                                                <div class="sub-text"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="additional-wrapper-in">
+                                    <div class="head-box">
+                                        <div class="titles">
+                                            <h3 class="title">Wybierz efekt jaki chcesz uzyskać:</h3>
+                                            <div class="subtitle">(jednokrotny wybór)</div>
+                                        </div>
+                                    </div>
+                                    <div class="content once">
+                                        <div class="box select-box xl-w-50 s-w-100" data-var_name="page3_2_2"
+                                            data-var_value="1">
+                                            <div class="icon new-car"></div>
+                                            <div class="text-box">
+                                                <h5 class="main-text">Jednoetapowe odświeżenie lakieru</h5>
+                                                <div class="sub-text">Podstawowa usługa, przywracająca dobry wygląd
+                                                    lakieru. W jednym kroku, przy dobraniu odpowiedniej kombinacji,
+                                                    usuwamy do 50-60% zarysowań powstałych na lakierze. One step usuwa
+                                                    mikrozarysowania, ryski, zmatowienia oraz przywraca blask.</div>
+                                            </div>
+                                        </div>
+                                        <div class="box select-box xl-w-50 s-w-100" data-var_name="page3_2_2"
+                                            data-var_value="2">
+                                            <div class="icon new-car"></div>
+                                            <div class="text-box">
+                                                <h5 class="main-text">Dwuetapowa korekta lakieru</h5>
+                                                <div class="sub-text">Usługa dedykowana dla wymagających i bardzo
+                                                    zniszczonych powłok lakierniczych. Usuwa nawet 70-80% zarysowań
+                                                    powstałych na lakierze. Przywraca salonowy blask, wyprowadzając
+                                                    lakier do świetnego stanu.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="additional-wrapper-in">
+                                    <div class="head-box">
+                                        <div class="titles">
+                                            <h3 class="title">Wybierz poziom zabezpieczenia:</h3>
+                                            <div class="subtitle">(jednokrotny wybór)</div>
+                                        </div>
+                                    </div>
+                                    <div class="content once">
+                                        <div class="box select-box xl-w-25 l-w-50 s-w-100 gap-24"
+                                            data-var_name="page3_2_3" data-var_value="1">
+                                            <!-- <div class="checkbox-container">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" id="checkbox_1" name="checkbox" autocomplete="off">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div> -->
+                                            <div class="circle"></div>
+                                            <div class="content-box">
+                                                <div class="text-box">
+                                                    <h5 class="main-text">Woskowanie</h5>
+                                                    <div class="sub-text">klasyczna ochrona twojej karoserii</div>
+                                                </div>
+                                                <div class="features-list">
+                                                    <div class="list-title">Dlaczego warto wybrać tę usługę?
+                                                    </div>
+                                                    <ul>
+                                                        <li>budżetowy sposób na ochronę lakieru przed szkodliwymi
+                                                            czynnikami atmosferycznymi</li>
+                                                        <li>przykrywa drobniejsze zarysowania</li>
+                                                        <li>poprawia wygląd i głębię lakieru</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box select-box xl-w-25 l-w-50 s-w-100 gap-24"
+                                            data-var_name="page3_2_3" data-var_value="2">
+                                            <!-- <div class="checkbox-container">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div> -->
+                                            <div class="circle"></div>
+                                            <div class="content-box">
+                                                <div class="text-box">
+                                                    <h5 class="main-text">Roczna powłoka ceramiczna</h5>
+                                                    <div class="sub-text">ceramiczna ochrona Twojego lakieru</div>
+                                                </div>
+                                                <div class="features-list">
+                                                    <div class="list-title">Dlaczego warto wybrać tę usługę?
+                                                    </div>
+                                                    <ul>
+                                                        <li>chcesz żeby Twój lakier pozostał w idealnym stanie przez
+                                                            minimum rok</li>
+                                                        <li>większość Twoich podróży to jazda po mieście</li>
+                                                        <li>chcesz, żeby lakier mniej się brudził, a utrzymanie go w
+                                                            czystości było zdecydowanie łatwiejsze i przyjemniejsze</li>
+                                                        <li>chcesz ochronić swoje auto przed szkodliwymi czynnikami
+                                                            atmosferycznymi, starzeniem, blaknięciem</li>
+                                                        <li>chcesz zminimalizować ryzyko powstawania rys na lakierze
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box select-box xl-w-25 l-w-50 s-w-100 gap-24"
+                                            data-var_name="page3_2_3" data-var_value="3">
+                                            <!-- <div class="checkbox-container">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div> -->
+                                            <div class="circle"></div>
+                                            <div class="content-box">
+                                                <div class="text-box">
+                                                    <h5 class="main-text">3-letnia powłoka ceramiczna</h5>
+                                                    <div class="sub-text">ceramiczna ochrona Twojego lakieru</div>
+                                                </div>
+                                                <div class="features-list">
+                                                    <div class="list-title">Dlaczego warto wybrać tę usługę?
+                                                    </div>
+                                                    <ul>
+                                                        <li>chcesz, aby Twój lakier pozostał w idealnym stanie przez
+                                                            minimum 3 lata</li>
+                                                        <li>większość Twoich podróży to jazda po mieście</li>
+                                                        <li>chcesz, żeby lakier mniej się brudził, a utrzymanie go w
+                                                            czystości było zdecydowanie łatwiejsze i przyjemniejsze</li>
+                                                        <li>chcesz ochronić swoje auto przed szkodliwymi czynnikami
+                                                            atmosferycznymi, starzeniem, blaknięciem</li>
+                                                        <li>chcesz zminimalizować ryzyko powstawania rys na lakierze
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box select-box xl-w-25 l-w-50 s-w-100 gap-24"
+                                            data-var_name="page3_2_3" data-var_value="4">
+                                            <!-- <div class="checkbox-container">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div> -->
+                                            <div class="circle"></div>
+                                            <div class="content-box">
+                                                <div class="text-box">
+                                                    <h5 class="main-text">4-letnia powłoka ceramiczna</h5>
+                                                    <div class="sub-text">ceramiczna ochrona Twojego lakieru</div>
+                                                </div>
+                                                <div class="features-list">
+                                                    <div class="list-title">Dlaczego warto wybrać tę usługę?
+                                                    </div>
+                                                    <ul>
+                                                        <li>chcesz, aby Twój lakier pozostał w idealnym stanie przez
+                                                            minimum 4 lata</li>
+                                                        <li>większość Twoich podróży to jazda po mieście</li>
+                                                        <li>chcesz, żeby lakier mniej się brudził, a utrzymanie go w
+                                                            czystości było zdecydowanie łatwiejsze i przyjemniejsze</li>
+                                                        <li>chcesz ochronić swoje auto przed szkodliwymi czynnikami
+                                                            atmosferycznymi, starzeniem, blaknięciem</li>
+                                                        <li>chcesz zminimalizować ryzyko powstawania rys na lakierze
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="buttons-wrapper left">
+                                    <div class="button-parent-transparent">
+                                        <div class="button prev">
+                                            <img src="./img/icons/triangle-prev.svg" alt="triangle-next">
+                                            <p>Wstecz</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons-wrapper right">
+                                    <div class="button-parent-transparent skip-long">
+                                        <div class="button skip move-next">
+                                            <p>Nie chcę niczym zabezpieczać lakieru po polerowaniu </p>
+                                            <img src="./img/icons/triangle-skip.svg" alt="triangle-skip">
+                                        </div>
+                                    </div>
+                                    <div class="button next move-next hidden">
+                                        <p>Dalej</p>
+                                        <img src="./img/icons/triangle-next.svg" alt="triangle-next">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary">
+                            <div class="notes-wrapper">
+                                <div class="note">*Każda wycena wymaga weryfikacji stanu samochodu przed podaniem
+                                    ostatecznej
+                                    ceny.
+                                    Podane ceny są brutto/netto na podstawie art. 113 ust. 1 i 9 ustawy o VAT.
+                                    Liczba
+                                    godzin
+                                    oznacza
+                                    szacowany czas na wykonanie usługi.</div>
+                            </div>
+                            <div class="pricing-wrapper">
+                                <div class="hours">
+                                    <div class="value totalTime">0h / 0 dni</div>
+                                    <div class="note">Szacowana liczba godzin / dni roboczych*</div>
+                                </div>
+                                <div class="cost">
+                                    <div class="value-wrapper">
+                                        <div class="value totalPrice"> od 0 pln*</div>
+                                        <div class="info"></div>
+                                    </div>
+                                    <div class="note">Szacowany koszt*</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-page page3_3 hidden">
+                <div class="head-button">Konfigurator kosztów</div>
+                <div class="configurator-box">
+                    <div class="configurator-box-wrapper">
+                        <div class="main">
+                            <div class="head-box">
+                                <div class="titles">
+                                    <h3 class="title">Wybierz preferowany poziom zabezpieczenia:</h3>
+                                    <div class="subtitle">(jednokrotny wybór)</div>
+                                </div>
+                                <div class="steps-bars">
+                                    <div class="desc">Etap:</div>
+                                    <div class="bars">
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar active"></div>
+                                        <div class="bar"></div>
+                                        <!-- <div class="bar"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content once">
+                                <div class="box select-box xl-w-33 m-w-100 gap-16" data-var_name="page3_3_1"
+                                    data-var_value="1">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_1" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Pakiet bikini</h5>
+                                            <div class="sub-text">skuteczna ochrona wybranych części karoserii: ⅓ maski,
+                                                ⅓ błotników, reflektory, zderzak, lusterka, wnęki klamek, ranty drzwi
+                                            </div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>chcesz stosunkowo niskim kosztem ochronić elementy karoserii
+                                                    najbardziej narażone na uszkodzenia</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-33 m-w-100 gap-16" data-var_name="page3_3_1"
+                                    data-var_value="2">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Pakiet full front</h5>
+                                            <div class="sub-text">skuteczna ochrona wybranych części karoserii: maska,
+                                                zderzak, lampy, błotniki, lusterka, nadszybie, słupki A, zabezpieczanie
+                                                słupków piano black, próg załadunkowy, ranty drzwi, wnęki klamek</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>znaczną częścią twoich podróży jest jazda po autostradach lub w
+                                                    cyklu mieszanym</li>
+                                                <li>chcesz uchronić się przed skutkami niechcianych obcierek
+                                                    parkingowych</li>
+                                                <li>chcesz utrzymać świetny stan lakieru przez 10 lat</li>
+                                                <li>chcesz, żeby lakier był wolny od odprysków, zarysowań, wypiaskowania
+                                                    i oksydacji</li>
+                                                <li>chcesz utrzymać wysoką wartość pojazdu przez wiele lat</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-33 m-w-100 gap-16" data-var_name="page3_3_1"
+                                    data-var_value="3">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Pakiet full body</h5>
+                                            <div class="sub-text">skuteczna ochrona wybranych części karoserii:
+                                                zabezpieczenie wszystkich powierzchni lakierowanych</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>zależy Ci na najwyższym stopniu ochrony</li>
+                                                <li>chcesz utrzymać idealny stan lakieru przez 10 lat</li>
+                                                <li>chcesz uchronić swoje auto przed spadkiem jego wartości</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="buttons-wrapper left">
+                                    <div class="button-parent-transparent">
+                                        <div class="button prev">
+                                            <img src="./img/icons/triangle-prev.svg" alt="triangle-next">
+                                            <p>Wstecz</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons-wrapper right">
+                                    <!-- <div class="button-parent-transparent">
+                                        <div class="button skip">
+                                            <p>Pomiń</p>
+                                            <img src="./img/icons/triangle-skip.svg" alt="triangle-skip">
+                                        </div>
+                                    </div> -->
+                                    <div class="button next move-next">
+                                        <p>Dalej</p>
+                                        <img src="./img/icons/triangle-next.svg" alt="triangle-next">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary">
+                            <div class="notes-wrapper">
+                                <div class="note">*Każda wycena wymaga weryfikacji stanu samochodu przed podaniem
+                                    ostatecznej
+                                    ceny.
+                                    Podane ceny są brutto/netto na podstawie art. 113 ust. 1 i 9 ustawy o VAT.
+                                    Liczba
+                                    godzin
+                                    oznacza
+                                    szacowany czas na wykonanie usługi.</div>
+                            </div>
+                            <div class="pricing-wrapper">
+                                <div class="hours">
+                                    <div class="value totalTime">0h / 0 dni</div>
+                                    <div class="note">Szacowana liczba godzin / dni roboczych*</div>
+                                </div>
+                                <div class="cost">
+                                    <div class="value-wrapper">
+                                        <div class="value totalPrice"> od 0 pln*</div>
+                                        <div class="info"></div>
+                                    </div>
+                                    <div class="note">Szacowany koszt*</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="form-page page3_4 hidden">
+                <div class="head-button">Konfigurator kosztów</div>
+                <div class="configurator-box">
+                    <div class="configurator-box-wrapper">
+                        <div class="main">
+                            <div class="head-box">
+                                <div class="titles">
+                                    <h3 class="title">Wybierz poziom czyszczenia wnętrza:</h3>
+                                    <div class="subtitle">(wielokrotny wybór)</div>
+                                </div>
+                                <div class="steps-bars">
+                                    <div class="desc">Etap:</div>
+                                    <div class="bars">
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar active"></div>
+                                        <div class="bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content multi">
+                                <div class="box select-box xl-w-33 gap-16" data-var_name="page3_4_1">
+                                    <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_1" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Podstawowe czyszczenie wnętrza</h5>
+                                            <div class="sub-text">odkurzanie podłogi i foteli, czyszczenie dywaników,
+                                                przetarcie plastików z kurzu, mycie szyb wewnątrz, aplikacja perfum
+                                                zapachowych</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>zależy ci na szybkim odświeżeniu wnętrza</li>
+                                                <li>Twoje auto jest czyste, lecz wymaga delikatnej kosmetyki</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-33 gap-16" data-var_name="page3_4_2">
+                                    <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Detailing wnętrza - tapicerka materiałowa</h5>
+                                            <div class="sub-text">demontaż foteli i tylnej kanapy* (jeśli możliwe),
+                                                usuwanie (tornadorowanie) piachu, odkurzanie podłogi i siedzeń, pranie
+                                                foteli, kanapy, podłogi, bagażnika, czyszczenie pasów bezpieczeństwa,
+                                                czyszczenie dywaników, czyszczenie podsufitki, czyszczenie i impregnacja
+                                                plastików, pędzelkowanie szczelin i zakamarków, czyszczenie wnęki koła
+                                                zapasowego, ozonowanie, mycie szyb, aplikacja perfum zapachowych</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>zależy Ci na kompleksowym wyczyszczeniu auta</li>
+                                                <li>chcesz usunąć wszystkie możliwe zabrudzenia</li>
+                                                <li>chcesz zabezpieczyć swoje plastiki przed promieniowaniem UV</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-33 gap-16" data-var_name="page3_4_3">
+                                    <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Detailing wnętrza - tapicerka skórzana</h5>
+                                            <div class="sub-text">demontaż foteli i tylnej kanapy* (jeśli możliwe),
+                                                usuwanie (tornadorowanie) piachu, odkurzanie podłogi i siedzeń,
+                                                czyszczenie i impregnacja tapicerki skórzanej, pranie podłogi i
+                                                bagażnika, czyszczenie pasów bezpieczeństwa, czyszczenie dywaników,
+                                                czyszczenie podsufitki, czyszczenie i impregnacja plastików,
+                                                pędzelkowanie szczelin i zakamarków, czyszczenie wnęki zapasowego,
+                                                ozonowanie, mycie szyb, aplikacja perfum zapachowych</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>zależy Ci na kompleksowym wyczyszczeniu wnętrza</li>
+                                                <li>chcesz usunąć wszystkie możliwe zabrudzenia</li>
+                                                <li>chcesz zabezpieczyć swoje plastiki przed promieniowaniem UV</li>
+                                                <li>chcesz, żeby tapicerka skórzana była czysta, matowa i zabezpieczona
+                                                    przed procesem starzenia się</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-33 gap-16" data-var_name="page3_4_4">
+                                    <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Czyszczenie i zabezpieczenie skór</h5>
+                                            <div class="sub-text">skuteczna pielęgnacja Twojej tapicerki</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>chcesz, by była czysta i matowa</li>
+                                                <li>chcesz spowolnić nieuchronny proces starzenia się skóry</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-33 gap-16" data-var_name="page3_4_5">
+                                    <div class=" checkbox-container">
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Pranie i impregnacja tapicerki materiałowej</h5>
+                                            <div class="sub-text">skuteczna pielęgnacja Twojej tapicerki</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>chcesz by była czysta i pachnąca</li>
+                                                <li>chcesz, by płyny nie wnikały w materiał</li>
+                                                <li>chcesz zniwelować brzydki zapach we wnętrzu</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="buttons-wrapper left">
+                                    <div class="button-parent-transparent">
+                                        <div class="button prev">
+                                            <img src="./img/icons/triangle-prev.svg" alt="triangle-next">
+                                            <p>Wstecz</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons-wrapper right">
+                                    <div class="button-parent-transparent">
+                                        <div class="button skip">
+                                            <p>Pomiń</p>
+                                            <img src="./img/icons/triangle-skip.svg" alt="triangle-skip">
+                                        </div>
+                                    </div>
+                                    <div class="button next move-next">
+                                        <p>Dalej</p>
+                                        <img src="./img/icons/triangle-next.svg" alt="triangle-next">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary">
+                            <div class="notes-wrapper">
+                                <div class="note">*Każda wycena wymaga weryfikacji stanu samochodu przed podaniem
+                                    ostatecznej
+                                    ceny.
+                                    Podane ceny są brutto/netto na podstawie art. 113 ust. 1 i 9 ustawy o VAT.
+                                    Liczba
+                                    godzin
+                                    oznacza
+                                    szacowany czas na wykonanie usługi.</div>
+                            </div>
+                            <div class="pricing-wrapper">
+                                <div class="hours">
+                                    <div class="value totalTime">0</div>
+                                    <div class="note">Szacowana liczba godzin / dni roboczych*</div>
+                                </div>
+                                <div class="cost">
+                                    <div class="value-wrapper">
+                                        <div class="value totalPrice"> od 0 pln*</div>
+                                        <div class="info"></div>
+                                    </div>
+                                    <div class="note">Szacowany koszt*</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="form-page page3_5 hidden">
+                <div class="head-button">Konfigurator kosztów</div>
+                <div class="configurator-box">
+                    <div class="configurator-box-wrapper">
+                        <div class="main">
+                            <div class="head-box">
+                                <div class="titles">
+                                    <h3 class="title">Wybierz pozostałe dodatkowe usługi:</h3>
+                                    <div class="subtitle">(wielokrotny wybór)</div>
+                                </div>
+                                <div class="steps-bars">
+                                    <div class="desc">Etap:</div>
+                                    <div class="bars">
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <!-- <div class="bar"></div> -->
+                                        <div class="bar active"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content multi">
+                                <div class="box select-box xl-w-33 m-w-50 s-w-100 gap-16" data-var_name="page3_5_1">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_1" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Renowacja reflektorów i zabezpieczenie powłoką
+                                                ceramiczną</h5>
+                                            <div class="sub-text">czyli ochrona Twoich lamp</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>chcesz odzyskać dobrą widoczność na drodze po zmroku</li>
+                                                <li>chcesz uniknąć konieczności wymiany reflektorów na nowe</li>
+                                                <li>chcesz zwiększyć swoje i innych bezpieczeństwo na drodze</li>
+                                                <li>zależy ci na optymalnej - 2 letniej ochronie reflektorów przed
+                                                    żółknięciem</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-33 m-w-50 s-w-100 gap-16" data-var_name="page3_5_2">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Renowacja reflektorów i zabezpieczenie folią ppf
+                                            </h5>
+                                            <div class="sub-text">czyli kompleksowa ochrona Twoich lamp</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>chcesz odzyskać dobrą widoczność na drodze po zmroku</li>
+                                                <li>zależy ci na najlepszej - 7 letniej ochronie reflektorów przed
+                                                    żółknięciem</li>
+                                                <li>chcesz, by lampy były wolne od odprysków, rys i zmatowień</li>
+                                                <li>chcesz uniknąć konieczności wymiany reflektorów na nowe</li>
+                                                <li>chcesz zwiększyć swoje i innych bezpieczeństwo na drodze</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-33 m-w-50 s-w-100 gap-16" data-var_name="page3_5_3">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Zabezpieczenie felg powłoką ceramiczną</h5>
+                                            <div class="sub-text">czyli ceramiczna ochrona przed osadami</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>chcesz, ochronić felgi przed oksydacją</li>
+                                                <li>chcesz, żeby bieżąca pielęgnacja była zdecydowanie łatwiejsza</li>
+                                                <li>chcesz, żeby osady, zabrudzenia i pył z klocków hamulcowych wolniej
+                                                    osiadały się na lakierowanej powierzchni</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-33 m-w-50 s-w-100 gap-16" data-var_name="page3_5_4">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Zabezpieczenie szyb powłoką ceramiczną</h5>
+                                            <div class="sub-text">czyli powłoka na szyby odpychająca cząsteczki wody
+                                            </div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>sprawia, że deszcz powyżej 60km/h szybko spływa z powierzchni szyb
+                                                </li>
+                                                <li>ułatwia widoczność podczas intensywnych opadów deszczu</li>
+                                                <li>ogranicza przywieranie się brudu</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-33 m-w-50 s-w-100 gap-16" data-var_name="page3_5_5">
+                                    <!-- <div class="checkbox-container">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Impregnacja dachu cabrio</h5>
+                                            <div class="sub-text">czyli powłoka hydrofobowa na część materiałową dachu
+                                            </div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>ułatwia pielęgnację materiału</li>
+                                                <li>materiał jest odporny na wnikanie wody i brudu</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box select-box xl-w-33 m-w-50 s-w-100 gap-16" data-var_name="page3_5_6">
+                                    <!-- <div class=" checkbox-container">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="checkbox_2" name="checkbox" autocomplete="off">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div> -->
+                                    <div class="circle"></div>
+                                    <div class="content-box">
+                                        <div class="text-box">
+                                            <h5 class="main-text">Woskowanie lakieru</h5>
+                                            <div class="sub-text">Woskowanie lakieru bez polerowania</div>
+                                        </div>
+                                        <div class="features-list">
+                                            <div class="list-title">Dlaczego warto wybrać tę usługę?</div>
+                                            <ul>
+                                                <li>budżetowy sposób na ochronę lakieru przed szkodliwymi czynnikami
+                                                    atmosferycznymi</li>
+                                                <li>trwałość od 3 do 8 miesięcy</li>
+                                                <li>przykrywa drobniejsze zarysowania</li>
+                                                <li>poprawia wygląd i głębię lakieru</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="buttons-wrapper left">
+                                    <div class="button-parent-transparent">
+                                        <div class="button prev">
+                                            <img src="./img/icons/triangle-prev.svg" alt="triangle-next">
+                                            <p>Wstecz</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons-wrapper right">
+                                    <!-- <div class="button-parent-transparent">
+                                        <div class="button skip">
+                                            <p>Pomiń</p>
+                                            <img src="./img/icons/triangle-skip.svg" alt="triangle-skip">
+                                        </div>
+                                    </div> -->
+                                    <div class="button next move-next">
+                                        <p>Dalej</p>
+                                        <img src="./img/icons/triangle-next.svg" alt="triangle-next">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary">
+                            <div class="notes-wrapper">
+                                <div class="note">*Każda wycena wymaga weryfikacji stanu samochodu przed podaniem
+                                    ostatecznej
+                                    ceny.
+                                    Podane ceny są brutto/netto na podstawie art. 113 ust. 1 i 9 ustawy o VAT.
+                                    Liczba
+                                    godzin
+                                    oznacza
+                                    szacowany czas na wykonanie usługi.</div>
+                            </div>
+                            <div class="pricing-wrapper">
+                                <div class="hours">
+                                    <div class="value totalTime">0h / 0 dni</div>
+                                    <div class="note">Szacowana liczba godzin / dni roboczych*</div>
+                                </div>
+                                <div class="cost">
+                                    <div class="value-wrapper">
+                                        <div class="value totalPrice"> od 0 pln*</div>
+                                        <div class="info"></div>
+                                    </div>
+                                    <div class="note">Szacowany koszt*</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-page summary-page">
+                <div class="head-button">Podsumowanie wybranych usług</div>
+                <div class="configuration-box-container">
+                    <div class="configurator-box summary">
+                        <div class="configurator-box-wrapper">
+                            <div class="summary-box">
+                                <div class="items-box">
+
+                                    <div class="item">
+                                        <div class="top">
+                                            <h5 class="item-name carCondition">---</h5>
+                                            <div class="item-value">nie dotyczy</div>
+                                        </div>
+                                        <div class="bottom">Stan pojazdu</div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="top">
+                                            <h5 class="item-name carSize">---</h5>
+                                            <div class="item-value">nie dotyczy</div>
+                                        </div>
+                                        <div class="bottom">Wielkość pojazdu</div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="top">
+                                            <h5 class="item-name stylingItems">---</h5>
+                                            <div class="item-value stylingPrice">0</div>
+                                        </div>
+                                        <div class="bottom">Stylizacja</div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="top">
+                                            <h5 class="item-name paintRenewalItems">---</h5>
+                                            <div class="item-value paintRenewalPrice">0</div>
+                                        </div>
+                                        <div class="bottom">Odnowa lakieru</div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="top">
+                                            <h5 class="item-name foilItems">---</h5>
+                                            <div class="item-value foilPrice">0</div>
+                                        </div>
+                                        <div class="bottom">Folie ochronne</div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="top">
+                                            <h5 class="item-name paintProtectItems">---</h5>
+                                            <div class="item-value paintProtectPrice">0</div>
+                                        </div>
+                                        <div class="bottom">Zabezpieczenie lakieru</div>
+                                    </div>
+
+                                    <!-- <div class="item">
+                                        <div class="top">
+                                            <h5 class="item-name interiorProtectItems"></h5>
+                                            <div class="item-value interiorProtectPrice">???</div>
+                                        </div>
+                                        <div class="bottom">Zabezpieczenie wnętrza</div>
+                                    </div> -->
+                                    <div class="item">
+                                        <div class="top">
+                                            <h5 class="item-name additionalServicesItems">---</h5>
+                                            <div class="item-value additionalServicesPrice">0</div>
+                                        </div>
+                                        <div class="bottom">Dodatkowe usługi</div>
+                                    </div>
+                                </div>
+
+                                <div class="total-price">
+                                    <div class="top">
+                                        <div class="value totalPrice"> od 0 pln*</div>
+                                        <div class="tax-info"></div>
+                                    </div>
+                                    <div class="bottom">Orientacyjny koszt usług</div>
+                                </div>
+                                <div class="notes-wrapper">
+                                    <div class="note">*Każda wycena wymaga weryfikacji stanu samochodu przed
+                                        podaniem
+                                        ostatecznej
+                                        ceny.
+                                        Podane ceny są brutto/netto na podstawie art. 113 ust. 1 i 9 ustawy o VAT.
+                                        Liczba
+                                        godzin
+                                        oznacza
+                                        szacowany czas na wykonanie usługi.</div>
+                                </div>
+                            </div>
+                            <div class="copy-to-email">
+                                <h5 class="title">Zachowaj kopię wyceny na później</h5>
+                                <div class="input-container">
+                                    <input type="email" name="email" id="email" placeholder="Wpisz swój adres e-mail">
+                                    <div class="checkbox-and-button">
+                                        <div class="checkbox-container">
+                                            <label class="checkbox">
+                                                <input type="checkbox" id="rodo" name="checkbox" autocomplete="off">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label for="rodo">*RODO i zgody marketingowe. Lorem ipsum dolor sit amet,
+                                                consectetur
+                                                adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet
+                                                odio
+                                                mattis.
+                                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                                inceptos
+                                                himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</label>
+
+                                        </div>
+                                        <div class="buttons">
+                                            <div class="buttons-wrapper">
+                                                <div class="button next send-btn">
+                                                    <p>Wyślij</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="error-box"></div>
+                                <div class="success-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reservation">
+                        <div class="reservation-box">
+                            <div class="text">Zarezerwuj termin konsultacji na miejscu!</div>
+                            <div class="buttons">
+                                <div class="buttons-wrapper">
+                                    <div class="button next contact-btn">
+                                        <p>Wypełnij formularz</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form method="post" id="hidden-summary-form" class="" enctype="multipart/form-data">
+
+                    <input type='text' name="carCondition">
+                    <input type='text' name="carSize">
+                    <input type='text' name="stylingItems">
+                    <input type='text' name="paintRenewalItems">
+                    <input type='text' name="foilItems">
+                    <input type='text' name="paintProtectItems">
+                    <input type='text' name="additionalServicesItems">
+
+                    <input type='text' name="stylingPrice">
+                    <input type='text' name="paintRenewalPrice">
+                    <input type='text' name="foilPrice">
+                    <input type='text' name="paintProtectPrice">
+                    <input type='text' name="additionalServicesPrice">
+
+                    <input type='text' name="endTotalPrice">
+
+                    <input type="text" name="email">
+
+                    <input type="hidden" name="recaptchaResponse" id="recaptchaResponse">
+
+                    <button type="submit" class="btn send-form" id="submit-button">Wyślij</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf2hcIpAAAAAO1sgP7bkMbS_dHflAHZV8bG8eFO"></script>
+    <script type="module" src="./js/main.js?cache_bust=1719992576060"></script>
+</body>
+
+</html>
