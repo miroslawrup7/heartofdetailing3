@@ -1098,6 +1098,7 @@ document.addEventListener("readystatechange", (event) => {
     if (event.target.readyState === "complete") {
         const page1height = getComputedStyle(page1Loc).height
         containerLoc.style.height = page1height
+        window.top.postMessage(page1height, '*')
     }
 })
 
