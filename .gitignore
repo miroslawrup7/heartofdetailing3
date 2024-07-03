@@ -5,3 +5,4 @@ php
 package-lock.json
 package.json
 src
+.gitignore
